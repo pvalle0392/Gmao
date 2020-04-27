@@ -9,6 +9,7 @@
 			<Image src="test-resources/sap/tnt/images/SAP_Logo.png" />
 			<Text text="Gestión de Mantenimiento Asistido por Ordenador" wrapping="false" />
 			<ToolbarSpacer />
+			<!-- linea de prueba -->
 			<Button icon="sap-icon://search" type="Transparent" />
 			<Button icon="sap-icon://task" type="Transparent" />
 			<Button icon="sap-icon://bell" type="Transparent" />
