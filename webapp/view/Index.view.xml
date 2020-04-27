@@ -1,0 +1,82 @@
+<mvc:View controllerName="ebimList.ListBinding.controller.Index" 
+		  xmlns:mvc="sap.ui.core.mvc" 
+		  xmlns:tnt="sap.tnt"
+		  displayBlock="true" 
+		  xmlns="sap.m">
+	
+		<tnt:ToolHeader>
+			<Button icon="sap-icon://menu2" type="Transparent" />
+			<Image src="test-resources/sap/tnt/images/SAP_Logo.png" />
+			<Text text="Gestión de Mantenimiento Asistido por Ordenador" wrapping="false" />
+			<ToolbarSpacer />
+			<Button icon="sap-icon://search" type="Transparent" />
+			<Button icon="sap-icon://task" type="Transparent" />
+			<Button icon="sap-icon://bell" type="Transparent" />
+			<Avatar src="test-resources/sap/tnt/images/Woman_avatar_01.png" displaySize="XS" press=".onAvatarPressed" />
+			<Button icon="sap-icon://grid" type="Transparent" />
+		</tnt:ToolHeader>
+	
+	
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+					
+					<content>
+						<FlexBox class="customFlexBoxHome" 
+								 justifyContent="Center"
+							     alignItems="Center"
+							     wrap="Wrap">
+									
+							
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+												 header="Ordenes de Mantenimiento [raiz desarrollador]"
+												 subheader="OTs"
+												 id="ots"
+												 frameType="OneByOne"
+												 press="onPress">
+										<TileContent>
+											<ImageContent src="sap-icon://customer-order-entry" />
+										</TileContent>
+									</GenericTile>
+								
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+												 header="Notificaciones">
+										<TileContent>
+											<ImageContent src="sap-icon://bell" />
+										</TileContent>
+									</GenericTile>
+			
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+												 header="Activos"> 
+										<TileContent>
+											<ImageContent src="sap-icon://blank-tag-2"/>
+										</TileContent>
+									</GenericTile>
+			
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+												 header="Calendario">
+										<TileContent>
+											<ImageContent src="sap-icon://calendar" />
+										</TileContent>
+									</GenericTile>
+						
+							</FlexBox>				
+
+					</content>
+					<!--
+					
+					<footer>
+						<Toolbar>
+					        <ToolbarSpacer/>
+					          <Button text="Actualizar" press="handleEditPress" />
+					        <ToolbarSpacer/>
+				      </Toolbar>
+					</footer>
+-->
+				</Page>
+				
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
