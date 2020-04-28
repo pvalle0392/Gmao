@@ -53,7 +53,7 @@
 											<ImageContent src="sap-icon://blank-tag-2"/>
 										</TileContent>
 									</GenericTile>
-<!-- comentario de prueba -->
+<!-- comentario de prueba ss-->
 									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
 												 header="Calendario">
 										<TileContent>
