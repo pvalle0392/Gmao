@@ -41,7 +41,7 @@
       "path": "/sap/opu/odata",
       "target": {
         "type": "destination",
-        "name": "GEBIM",
+        "name": "GMAO",
         "entryPath": "/sap/opu/odata"
       },
       "description": "GEBIM"

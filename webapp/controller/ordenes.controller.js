@@ -16,20 +16,20 @@ sap.ui.define([
 		},
 		onSearch: function (event){ 
 			this.getView().byId("order-list").setVisible(true); 
-			var dateLow = this.byId("fecha-low").getValue();
+			var dateLow = this.byId("fecha-inicio").getValue();
 			var dateLowArray = dateLow.split("-");
 			var dateLow = dateLowArray[0] + dateLowArray[1] + dateLowArray[2];
-			var dateHigh = this.byId("fecha-high").getValue();
+			var dateHigh = this.byId("fecha-fin").getValue();
 			var dateHighArray = dateHigh.split("-");
 			var dateHigh = dateHighArray[0] + dateHighArray[1] + dateHighArray[2];
 			var plant = this.byId("plan-plant").getValue();
 			jQuery.sap.require("sap.m.MessageToast"); 
 			sap.m.MessageToast.show(dateLow + "//" + dateHigh + "//" + plant);
 		//var oTable  = this.byId("oTable");
-			var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/OM_GetListSet";
+			/*var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/";
 			var oModel = new sap.ui.model.odata.ODataModel(sUrl, true);
-			sap.ui.getCore().setModel(oModel);
-		/*	var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/OM_GetListSet";
+			sap.ui.getCore().setModel(oModel);*/
+			var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/OM_GetListSet";
 			$.ajax({
 		          url: sUrl,
 		          type: 'POST',
@@ -59,16 +59,16 @@ sap.ui.define([
 						  ]
 						},
 		          processData: false,
-		          success: function(data){
-		              console.log("success"+data);
+		          success: function(oData,oResponse){
+		          	jQuery.sap.require("sap.m.MessageToast"); 
+					sap.m.MessageToast.show("operacion exitosa");
 		          },
 		          error: function(e){
-		              console.log("error: "+e);
+		            jQuery.sap.require("sap.m.MessageToast"); 
+					sap.m.MessageToast.show("error");
 		          }
 		        });
-			/*
-			oModel.callFunction(sFunctionName, [mParameters])
-			oModel.read("/OM_GetDocumentSet", null, ["&$filter=Zorderid eq '" + orderId + "'"],false, 
+			/*oModel.read("/OM_GetDocumentSet", null, ["&$filter=Zorderid eq '99'"],false, 
 						function(oData, oResponse) {
 							
 							jQuery.sap.require("sap.m.MessageToast");
