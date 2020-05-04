@@ -17,7 +17,7 @@
 			<Button icon="sap-icon://grid" type="Transparent" />
 		</tnt:ToolHeader>
 	
-	<!-- hola	-->
+
 	<Shell id="shell">
 		<App id="app">
 			<pages>
