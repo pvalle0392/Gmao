@@ -1,26 +1,19 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ebimList.ListBinding.controller.activos"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 
-<!--	<MessagePage
-		title="{i18n>NelPerro}"
-		text="{i18n>NelPerro.text}"
-		description="{i18n>NelPerro.description}"
-		showNavButton="true"
-		navButtonPress=".onNavBack"/>
---->
-	
-	<App>
+
+		<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Activos">
 				<content>
 					<Label text="Desde: " class="sapUiResponsiveMargin"/>
 					<Input type="Date" id="fecha-inicio" width="250px"/>
 					<Label text="Hasta: " class="sapUiResponsiveMargin"/>
 					<Input type="Date" id="fecha-fin" width="250px"/>
-					<Label text="Centro: " class="sapUiResponsiveMargin"/>
+					<Label text="Ubicación Técnica: " class="sapUiResponsiveMargin"/>
 					<Input id="plan-plant" width="250px"/>
-					<Button text="Buscar" icon="sap-icon://search" press="onPress" id="boton"/>
-					<List id="order-list" headerText="Ordenes encontradas">
+					<Button text="Buscar" icon="sap-icon://search" press="onPress3" id ="boton" />
+					<List id="order-list" headerText="Activos encontrados">
 						<items>
 							<ObjectListItem
 							title="titulo"
@@ -30,10 +23,13 @@
 							>
 								
 							</ObjectListItem>
-						</items>   
-					</List>      
+						</items>
+						
+						
+					</List>
 				</content>
 			</Page>
 		</pages>
 	</App>
+
 </mvc:View>
