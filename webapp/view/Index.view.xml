@@ -3,7 +3,7 @@
 		  xmlns:tnt="sap.tnt"
 		  displayBlock="true" 
 		  xmlns="sap.m">
-	
+
 		<tnt:ToolHeader>
 			<Button icon="sap-icon://menu2" type="Transparent" />
 			<Image src="test-resources/sap/tnt/images/SAP_Logo.png" />
@@ -17,7 +17,7 @@
 			<Button icon="sap-icon://grid" type="Transparent" />
 		</tnt:ToolHeader>
 	
-	
+
 	<Shell id="shell">
 		<App id="app">
 			<pages>
