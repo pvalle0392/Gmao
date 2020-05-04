@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ebimList.ListBinding.controller.activos"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	
+	<!-- hola	-->
 	<MessagePage
 		title="{i18n>NelPerro}"
 		text="{i18n>NelPerro.text}"
