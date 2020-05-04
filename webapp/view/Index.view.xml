@@ -49,7 +49,9 @@
 									</GenericTile>
 			
 									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
-												 header="Activos"> 
+												 header="Activos"
+												 frameType="OneByOne"
+												 press="onPress2"> 
 										<TileContent>
 											<ImageContent src="sap-icon://blank-tag-2"/>
 										</TileContent>
