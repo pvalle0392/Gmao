@@ -12,7 +12,7 @@ sap.ui.define([
 		
 		
 		onPress3: function(){
-			var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/OM_GetListSet";
+			var sUrl = "/sap/opu/odata/sap/ZGMAO_ODATA_SRV/";
 			var oModel = new sap.ui.model.odata.ODataModel(sUrl, true);
 			sap.ui.getCore().setModel(oModel);
 			
