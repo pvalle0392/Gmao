@@ -19,7 +19,19 @@
 					<Input type="Date" id="fehca-fin" width="250px"/>
 					<Label text="Centro: " class="sapUiResponsiveMargin"/>
 					<Input id="plan-plant" width="250px"/>
-					<Button text="Buscar" icon="sap-icon://search" press="onPress" id ="boton" />
+					<Button text="Buscar" icon="sap-icon://search" press="onSearch" id ="boton" />
+					<List id="order-list" headerText="Lista de ordenes de mantenimiento">
+						<items>
+							<ObjectListItem
+							title="titulo"
+							number="numero"
+							numberUnit="numberunit"
+							intro="intro"
+							>
+								
+							</ObjectListItem>
+						</items>
+					</List>
 				</content>
 			</Page>
 		</pages>
