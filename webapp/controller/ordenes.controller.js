@@ -7,8 +7,8 @@ sap.ui.define([
 
 		onInit: function () {
 			
-		
-			
+		//comentario de prueba
+			 
 		},
 		
 		onNavBack : function () {
