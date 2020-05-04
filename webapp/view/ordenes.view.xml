@@ -1,18 +1,26 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ebimList.ListBinding.controller.ordenes"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	
-	<MessagePage
+<!--	<MessagePage
 		title="{i18n>NotFound}"
 		text="{i18n>NotFound.text}"
 		description="{i18n>NotFound.description}"
 		showNavButton="true"
-		navButtonPress=".onNavBack"/>
+		navButtonPress=".onNavBack"/>-->
 		
 	
 	<App>
 		<pages>
-			<Page title="Title">
-				<content></content>
+			<Page title="Filtrar ordenes de mantenimineto">
+				<content>
+					<Label text="Desde: " class="sapUiResponsiveMargin"/>
+					<Input type="Date" id="fecha-inicio" width="250px"/>
+					<Label text="Hasta: " class="sapUiResponsiveMargin"/>
+					<Input type="Date" id="fehca-fin" width="250px"/>
+					<Label text="Centro: " class="sapUiResponsiveMargin"/>
+					<Input id="plan-plant" width="250px"/>
+					<Button text="Buscar" icon="sap-icon://search" press="onPress" id ="boton" />
+				</content>
 			</Page>
 		</pages>
 	</App>
