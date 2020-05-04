@@ -8,7 +8,6 @@ sap.ui.define([
 		onInit: function () {
 			
 			
-			
 		},
 		
 		onNavBack : function () {

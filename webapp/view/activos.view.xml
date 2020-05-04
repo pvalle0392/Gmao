@@ -7,7 +7,7 @@
 		description="{i18n>NelPerro.description}"
 		showNavButton="true"
 		navButtonPress=".onNavBack"/>
-		
+	<!-- hola -->	
 	
 	<App>
 		<pages>
