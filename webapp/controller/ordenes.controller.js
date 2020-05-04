@@ -53,7 +53,7 @@ sap.ui.define([
 						  "NAVOMLIST": [
 						    {
 						      "Nro": "",
-						      "OrderId": "",
+						      "OrderId": "", 
 						      "OrderDesc": ""
 						    }
 						  ]

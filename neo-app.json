@@ -39,7 +39,7 @@
     },
     {
       "path": "/sap/opu/odata",
-      "target": {
+      "target": { 
         "type": "destination",
         "name": "GMAO",
         "entryPath": "/sap/opu/odata"
