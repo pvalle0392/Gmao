@@ -113,6 +113,11 @@
 					"viewType": "XML",
 					"viewName": "ordenes",
 					"viewLevel" :1
+				},
+				"activos":{
+					"viewType": "XML",
+					"viewName": "activos",
+					"viewLevel" :1
 				}
 			}
 		}
