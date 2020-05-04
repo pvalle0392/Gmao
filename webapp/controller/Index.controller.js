@@ -10,7 +10,7 @@ sap.ui.define([
 		
 		onPress: function (oEvent) {
 			
-				//this.getOwnerComponent().getRouter().navTo("ordenes");
+				//this.getOwnerComponent().getRouter().navTo("ordenes")..;
 				this.getOwnerComponent().getTargets().display("ordenes");
 					
 		},
