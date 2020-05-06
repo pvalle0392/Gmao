@@ -16,7 +16,7 @@ sap.ui.define([
 			var oModel = new sap.ui.model.odata.ODataModel(sUrl, true);
 			sap.ui.getCore().setModel(oModel);
 			
-			oModel.read("/Equi_GetListSet", null, ["&$filter=ZubTec eq 'EBIM'"],false, 
+			oModel.read("/Equi_GetListSet", null, ["&$filter=(ZubTec eq 'EBIM')&$expand=EQUILIST"],false, 
 						function(oData, oResponse) {
 							var arrayData = oData.results[0].EQUILIST.results;	
 							var jsondata = {items: arrayData };
