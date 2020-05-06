@@ -16,8 +16,12 @@ sap.ui.define([
 			var oModel = new sap.ui.model.odata.ODataModel(sUrl, true);
 			sap.ui.getCore().setModel(oModel);
 			
-			oModel.read("/OM_GetDocumentSet", null, ["&$filter=Zorderid eq '99'"],false, 
+			oModel.read("/Equi_GetListSet", null, ["&$filter=ZubTec eq 'EBIM'"],false, 
 						function(oData, oResponse) {
+							var arrayData = oData.results[0].EQUILIST.results;	
+							var jsondata = {items: arrayData };
+							var jsonModel = new sap.ui.model.json.JSONModel();
+							jsonModel.setData(jsondata);
 							
 							jQuery.sap.require("sap.m.MessageToast");
 							sap.m.MessageToast.show("respuesta exitosa");
