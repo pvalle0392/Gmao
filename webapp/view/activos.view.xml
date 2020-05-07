@@ -16,10 +16,9 @@
 					<List id="order-list" headerText="Activos encontrados">
 						<items>
 							<ObjectListItem
-							title="titulo"
-							number="number"
-							numberUnit="numberUnit"
-							intro="intro"
+							title="{/}descripcion"
+							number="emplazamiento"
+							intro="nro de equipo"
 							>
 								
 							</ObjectListItem>

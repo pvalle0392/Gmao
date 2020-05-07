@@ -15,13 +15,11 @@
 					<Label text="Centro: " class="sapUiResponsiveMargin"/>
 					<Input id="plan-plant" width="250px"/>
 					<Button text="Buscar" icon="sap-icon://search" press="onSearch" id ="boton" />
-					<List id="order-list" headerText="Ordenes encontradas">
+					<List id="order-list" headerText="Ordenes encontradas" items="{/OM_GetListSet}">
 						<items>
 							<ObjectListItem
-							title="titulo"
-							number="number"
-							numberUnit="numberUnit"
-							intro="intro"
+							title="{OrderDesc}"
+							intro="{OrderId}"
 							> 
 								
 							</ObjectListItem>

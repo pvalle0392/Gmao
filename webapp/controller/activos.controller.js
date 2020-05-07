@@ -22,7 +22,7 @@ sap.ui.define([
 							var jsondata = {items: arrayData };
 							var jsonModel = new sap.ui.model.json.JSONModel();
 							jsonModel.setData(jsondata);
-							
+							console.log(arrayData);
 							jQuery.sap.require("sap.m.MessageToast");
 							sap.m.MessageToast.show("respuesta exitosa");
 		
