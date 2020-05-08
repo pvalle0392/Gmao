@@ -6,21 +6,16 @@
 		<pages>
 			<Page title="Activos">
 				<content>
-					<Label text="Desde: " class="sapUiResponsiveMargin"/>
-					<Input type="Date" id="fecha-inicio" width="250px"/>
-					<Label text="Hasta: " class="sapUiResponsiveMargin"/>
-					<Input type="Date" id="fecha-fin" width="250px"/>
 					<Label text="Ubicación Técnica: " class="sapUiResponsiveMargin"/>
-					<Input id="plan-plant" width="250px"/>
+					<Input id="ub-tec" width="250px"/>
 					<Button text="Buscar" icon="sap-icon://search" press="onPress3" id ="boton" />
-					<List id="order-list" headerText="Activos encontrados">
+					<List id="equi-list" headerText="Activos encontrados" items="{/items}">
 						<items>
 							<ObjectListItem
-							title="{/}descripcion"
-							number="emplazamiento"
-							intro="nro de equipo"
+							title="{Zdescript}"
+							number="{Zemplaza}"
+							intro="{Zequnr}"
 							>
-								
 							</ObjectListItem>
 						</items>
 						

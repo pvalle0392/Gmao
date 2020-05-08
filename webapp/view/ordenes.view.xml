@@ -6,7 +6,7 @@
 	
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Órdenes de Mantenimiento">
 				<content>
 					<Label text="Desde: " class="sapUiResponsiveMargin"/>
 					<Input type="Date" id="fecha-inicio" width="250px"/>
@@ -15,7 +15,7 @@
 					<Label text="Centro: " class="sapUiResponsiveMargin"/>
 					<Input id="plan-plant" width="250px"/>
 					<Button text="Buscar" icon="sap-icon://search" press="onSearch" id ="boton" />
-					<List id="order-list" headerText="Ordenes encontradas" items="{/OM_GetListSet}">
+					<List id="order-list" headerText="Ordenes encontradas" items="{/items}">
 						<items>
 							<ObjectListItem
 							title="{OrderDesc}"
