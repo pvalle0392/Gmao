@@ -9,7 +9,7 @@
 	
 	<App>
 		<pages>
-			<Page title="Órdenes de Mantenimiento">
+			<Page title="Filtar órdenes de Mantenimiento">
 				<content>
 					<Label text="Desde: " class="sapUiResponsiveMargin"/>
 					<Input type="Date" id="fecha-inicio" width="250px"/>
