@@ -7,8 +7,8 @@ sap.ui.define([
 
 		onInit: function () {
 			this.getView().byId("equi-list").setVisible(false);
-			
 		},
+		
 		onPress3: function(){ 
 			
 			this.getView().byId("equi-list").setVisible(true); 
@@ -24,18 +24,16 @@ sap.ui.define([
 							var jsondata = {items: arrayData };
 							var jsonModel = new sap.ui.model.json.JSONModel();
 							jsonModel.setData(jsondata);
-							console.log(arrayData);
+							//console.log(arrayData);
 							lista.setModel(jsonModel);
-							lista.bindAggregation("items", "/items",
-													new sap.ui.core.ObjectListItem({title: "{Zdescript}", intro:"{Zequnr}", number:"{Zemplaza}"}));
-						
+							lista.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{Zdescript}", intro:"{Zequnr}", number:"{Zemplaza}"}));
 						},
 						function(error){
-							console.log("error");
+							//console.log("error");
 					    });
 		},
+		
 		onNavBack : function () {
-			
 			
 		}
 	
