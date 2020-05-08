@@ -18,7 +18,7 @@
 					<Label text="Centro: " class="sapUiResponsiveMargin"/>
 					<Input id="plan-plant" width="250px"/>
 					<Button text="Buscar" icon="sap-icon://search" press="onSearch" id ="boton" />
-					<List id="order-list" headerText="Ordenes encontradas" items="{/items}">
+					<List id="order-list" headerText="Ordenes encontradas" items="{/items}"> <!--selectionChange="onSelectionChange"-->
 						<items>
 							<ObjectListItem
 							title="{OrderId}"
