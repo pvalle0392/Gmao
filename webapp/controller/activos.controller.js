@@ -26,7 +26,7 @@ sap.ui.define([
 							jsonModel.setData(jsondata);
 							//console.log(arrayData);
 							lista.setModel(jsonModel);
-							lista.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{Zdescript}", intro:"{Zequnr}", number:"{Zemplaza}"}));
+							lista.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{Zequnr}", intro:"{Zdescript}", number:"{Zemplaza}"}));
 						},
 						function(error){
 							//console.log("error");

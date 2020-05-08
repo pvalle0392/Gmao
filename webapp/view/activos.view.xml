@@ -15,9 +15,9 @@
 					<List id="equi-list" headerText="Activos encontrados" items="{/items}">
 						<items>
 							<ObjectListItem
-							title="{Zdescript}"
+							title="{Zequnr}"
 							number="{Zemplaza}"
-							intro="{Zequnr}"
+							intro="{Zdescript}"
 							>
 							</ObjectListItem>
 						</items>

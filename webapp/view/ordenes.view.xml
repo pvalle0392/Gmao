@@ -21,8 +21,8 @@
 					<List id="order-list" headerText="Ordenes encontradas" items="{/items}">
 						<items>
 							<ObjectListItem
-							title="{OrderDesc}"
-							intro="{OrderId}"
+							title="{OrderId}"
+							intro="{OrderDesc}"
 							> 
 								
 							</ObjectListItem>

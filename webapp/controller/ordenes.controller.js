@@ -73,7 +73,7 @@ sap.ui.define([
 							var jsonModel = new sap.ui.model.json.JSONModel();
 							jsonModel.setData(jsondata);
 							oList.setModel(jsonModel);
-							oList.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{OrderDesc}", intro:"{OrderId}"}));
+							oList.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{OrderId}", intro:"{OrderDesc}"}));
 						    },
 						    function(err){
 						       // console.log("error");
