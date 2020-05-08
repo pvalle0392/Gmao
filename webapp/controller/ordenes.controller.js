@@ -6,12 +6,11 @@ sap.ui.define([
 	return Controller.extend("ebimList.ListBinding.controller.ordenes", {
 
 		onInit: function () {
-		this.getView().byId("order-list").setVisible(false);
+			this.getView().byId("order-list").setVisible(false);
 		},
 		
 		onNavBack : function () {
 			this.getOwnerComponent().getTargets().display("Index");
-			
 		},
 		
 		onSearch: function (event){ 
@@ -74,8 +73,7 @@ sap.ui.define([
 							var jsonModel = new sap.ui.model.json.JSONModel();
 							jsonModel.setData(jsondata);
 							oList.setModel(jsonModel);
-							oList.bindAggregation("items", "/items",
-													new sap.ui.core.ObjectListItem({title: "{OrderDesc}", intro:"{OrderId}"}));
+							oList.bindAggregation("items", "/items", new sap.ui.core.ObjectListItem({title: "{OrderDesc}", intro:"{OrderId}"}));
 						    },
 						    function(err){
 						       // console.log("error");
