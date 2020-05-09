@@ -33,8 +33,9 @@ sap.ui.define([
 					    });
 		},
 		
-		onNavBack : function () {
+		pressActivo: function () {
 			
+			this.getOwnerComponent().getTargets().display("MenuActivo");
 		}
 	
 

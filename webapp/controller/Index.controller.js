@@ -10,8 +10,7 @@ sap.ui.define([
 		
 		onPress: function (oEvent) {
 			
-				//this.getOwnerComponent().getRouter().navTo("ordenes");
-				this.getOwnerComponent().getTargets().display("ordenes");
+			this.getOwnerComponent().getTargets().display("ordenes");
 					
 		},
 		
@@ -21,7 +20,7 @@ sap.ui.define([
 
 		onClick: function () {
 			
-			console.log("Click");
+		//	console.log("Click");
 		}
 	});
 });

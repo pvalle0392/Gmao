@@ -18,6 +18,7 @@
 							title="{Zequnr}"
 							number="{Zemplaza}"
 							intro="{Zdescript}"
+							press="pressActivo"
 							>
 							</ObjectListItem>
 						</items>

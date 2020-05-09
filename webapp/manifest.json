@@ -110,14 +110,22 @@
 					"viewLevel" :0
 				},
 				"ordenes": {
+					"transition": "slide",
 					"viewType": "XML",
 					"viewName": "ordenes",
 					"viewLevel" :1
 				},
 				"activos":{
+					"transition": "slide",
 					"viewType": "XML",
 					"viewName": "activos",
 					"viewLevel" :1
+				},
+				"MenuActivo":{
+					"transition": "slide",
+					"viewType": "XML",
+					"viewName": "MenuActivo",
+					"viewLevel" :2
 				}
 			}
 		}
